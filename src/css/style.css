@@ -1,0 +1,90 @@
+body {
+  font-family: Museo-Sans; }
+
+.container {
+  max-width: 960px;
+  margin: auto; }
+
+.promo {
+  padding: 20px 10px 90px;
+  background: url("../img/bg/bg-header.png") center/cover no-repeat;
+  background-position: top; }
+  .promo .header {
+    min-height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .promo .header__official {
+    text-align: center;
+    color: #fff;
+    font-size: 12px; }
+    .promo .header__official span {
+      font-size: 18px; }
+  .promo .header__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    .promo .header__contacts .phone {
+      font-size: 18px; }
+  .promo .header-choice {
+    margin-top: 90px; }
+    .promo .header-choice .main_title {
+      text-align: end;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 42px;
+      line-height: 40px; }
+      .promo .header-choice .main_title span {
+        font-size: 24px; }
+    .promo .header-choice .choice-info {
+      margin-top: 65px;
+      display: flex;
+      justify-content: flex-end; }
+      .promo .header-choice .choice-info .choice-item {
+        position: relative;
+        height: 100px;
+        width: 125px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .promo .header-choice .choice-info .choice-item .choice-description {
+          position: absolute;
+          bottom: 0px;
+          text-align: center;
+          color: #fff; }
+  .promo .header-links {
+    margin-top: 70px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end; }
+    .promo .header-links span {
+      font-size: 16px;
+      margin-top: 15px;
+      color: #fff; }
+    .promo .header-links .button {
+      width: 300px;
+      height: 50px;
+      font-size: 16px; }
+
+.link {
+  color: #fff;
+  text-transform: uppercase; }
+  .link:hover {
+    text-decoration: underline;
+    color: #fff; }
+
+.link-button:hover {
+  text-decoration: none;
+  color: #fff; }
+
+.button {
+  display: block;
+  padding: 6px 25px;
+  background-color: #c70101;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 300; }

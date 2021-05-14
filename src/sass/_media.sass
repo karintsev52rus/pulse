@@ -22,19 +22,36 @@
             align-items: center
             margin-top: 40px
 
+
+    .slider
+        .slick-next img
+            display: none
+        
+        .slick-prev img
+            display: none
+        
+        .slick-dots li button:before
+            font-size: 25px
+        
+    
+
     .advantages
         .advantages__wrapper
             flex-direction: column
             .advantage
                 width: 500px
                 margin: 15px auto
-
                 &:after
                     content: ""
                     display: block
                     margin-top: 20px
                     width: 150px
                     border-bottom: 2px solid #8b8b8b
+                &:last-child
+                    &:after
+                        content: ""
+                        display: none
+
 
 @media (max-width: 750px)
 
@@ -104,5 +121,13 @@
                 span
                     font-size: 12px
 
-    .section_header
-        font-size: 20px
+    
+
+    .consultation
+        .container
+            .section_header
+                font-size: 20px
+            .header_left
+                text-align: center
+            .consultation__description
+                font-size: 16px

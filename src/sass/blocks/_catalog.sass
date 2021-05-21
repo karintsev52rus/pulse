@@ -1,0 +1,137 @@
+.catalog
+    padding-bottom: 100px
+    &__tabs
+        margin-top: 70px
+        margin-bottom: 60px
+        list-style: none
+        display: flex
+        justify-content: center
+        padding: 0
+        .tab
+            height: 50px
+            width: 200px
+            border: 2px solid #d0d0d0
+            margin-left: 5px
+            margin-right: 5px
+            color: #6b6b6b
+            text-align: center
+            line-height: 48px
+            font-size: 18px
+            text-transform: uppercase
+            transform: skewX(-25deg)
+            transition: 0.5s all
+            cursor: pointer
+            &:hover
+                box-shadow: 3px 3px 20px $main-color
+                border: none
+            div
+                transform: skewX(25deg)
+            &_active
+                color: #fff
+                background-color: $main_color
+                border: none
+
+    .catalog__content
+        display: none
+        flex-wrap: wrap
+    .catalog__content_active
+        display: flex
+
+    .catalog-item
+        margin: 10px
+        width: 300px
+        min-height: 440px
+        padding: 25px 20px
+        border: 3px solid #e8e8e8
+        overflow: hidden
+        .catalog-item__wrapper
+            width: calc(200% + 40px)
+            display: flex
+            .catalog-item__content
+                width: 50%
+                min-height: 340px
+                margin-right: 0px
+                transform: translateX(-100%)
+                &_active
+                    transform: translateX(0%)
+                    margin-right: 20px
+                    width: 50%
+                .catalog-item__img
+                    max-width: 100%
+                    height: 140px
+                    display: block
+                    margin: 0 auto
+                .catalog-item__subtitle
+                    text-align: center
+                    font-size: 16px
+                    font-weight: 700
+                    margin-top: 30px
+                .catalog-item__descr
+                    text-align: center
+                    margin-top: 20px
+                    font-size: 14px
+                .catalog-item__link
+                    position: absolute
+                    bottom: 0
+                    left: 50%
+                    transform: translateX(calc(-50%))
+                    margin-top: 20px
+                    text-align: center
+            .catalog-item__list
+                width: 50%
+                transform: translateX(0%)
+                padding-left: 20px
+                padding-right: 20px
+                &_active
+                    width: 50%
+                    transform: translateX(-100%)
+                ul
+                    font-size: 14px
+                    padding-left: 0px
+                    list-style: outside
+                    list-style-type: none
+                    li
+                        margin-bottom: 15px
+                        position: relative
+                    li:before
+                        content: ""
+                        display: block
+                        position: absolute
+                        top: 10px
+                        left: -15px
+                        width: 4px
+                        height: 4px
+                        background-color: red
+                .catalog-item__link_back
+                    display: block
+                    position: absolute
+                    bottom: 0
+                    left: 50%
+                    transform: translateX(calc(-50%))
+                    margin-top: 20px
+                    text-align: center
+
+    .catalog-item
+        hr
+            border-color: #e8e8e8
+            border-top: none
+        .catalog-item__footer
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-top: 20px
+            .catalog-item__old_price
+                font-size: 14px
+                color: #555555
+                text-decoration: line-through
+            .catalog-item__price
+                font-size: 20px
+                font-weight: 700
+
+.link-red
+    color: $main-color
+    font-weight: 500
+    &:hover
+        color: $main-color
+        
+

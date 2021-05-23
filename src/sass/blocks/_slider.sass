@@ -6,22 +6,31 @@
         margin: auto
     
 
-.slider__inner .slider-image
-    display: block
-    max-width: 750px
-    width: 100%
+.carousel-item 
+    transition: 0.5s
+    height: 400px
+  
+
+.carousel-item img
     margin: auto
+    height: 100%
 
 
-.slick-next
-    right: -40px
-    top: 50%
-    transform: translateY(-150%)
+.carousel-control-prev-icon
+    background-image: url('../img/img-chevron-left.png')
 
-.slick-prev
-    left: -50px
-    top: 50%
-    transform: translateY(-150%)
+
+.carousel-control-next-icon
+    background-image: url('../img/img-chevron-right.png')
+
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon
+    width: 1.5em
+  
+
+.carousel-control-prev, .carousel-control-next
+    opacity: 0.9
 
 
             

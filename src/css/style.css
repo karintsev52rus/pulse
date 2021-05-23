@@ -17,15 +17,20 @@ body {
     text-decoration: underline;
     color: #fff; }
 
-.link-button:hover {
-  text-decoration: none;
-  color: #fff; }
+.link-button {
+  text-decoration: none; }
+  .link-button:hover {
+    text-decoration: none;
+    color: #fff; }
 
 .section_header {
   text-align: center;
   font-size: 30px;
   color: black;
   text-transform: uppercase; }
+
+.container {
+  padding: 0px; }
 
 .button {
   display: block;
@@ -155,12 +160,8 @@ body {
       justify-content: center;
       align-items: center;
       margin-top: 40px; }
-  .slider .slick-next img {
-    display: none; }
-  .slider .slick-prev img {
-    display: none; }
-  .slider .slick-dots li button:before {
-    font-size: 25px; }
+    .promo .carousel-item {
+      height: 400px; }
   .advantages .advantages__wrapper {
     flex-direction: column; }
     .advantages .advantages__wrapper .advantage {
@@ -206,6 +207,18 @@ body {
       font-size: 17px; }
   .promo .promo__content .promo__info .promo__item {
     font-size: 14px; }
+  .slider .carousel-item {
+    width: 100%;
+    height: auto; }
+  .slider .carousel-item img {
+    width: 100%; }
+  .slider .carousel-control-prev, .slider .carousel-control-next {
+    display: none; }
+  .catalog .catalog__tabs {
+    flex-direction: column;
+    align-items: center; }
+    .catalog .catalog__tabs .tab {
+      margin-top: 10px; }
   .advantages .advantages__wrapper {
     flex-direction: column; }
     .advantages .advantages__wrapper .advantage {
@@ -213,6 +226,11 @@ body {
       margin: 15px auto; }
   .section_header {
     font-size: 25px; } }
+
+@media (max-width: 600px) {
+  .feedback .comment {
+    flex-direction: column;
+    align-items: center; } }
 
 @media (max-width: 400px) {
   .promo .promo__info .promo__item .promo__item-description {
@@ -228,7 +246,15 @@ body {
   .consultation .container .header_left {
     text-align: center; }
   .consultation .container .consultation__description {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .feedback .comment .comment__content {
+    margin-left: 0px; }
+  .feedback .container .comment {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px; }
+    .feedback .container .comment .comment__content {
+      margin-left: 20px; } }
 
 .feed-form {
   margin-top: 36px;
@@ -273,24 +299,29 @@ body {
     max-width: 800px;
     margin: auto; }
 
-.slider__inner .slider-image {
-  display: block;
-  max-width: 750px;
-  width: 100%;
-  margin: auto; }
+.carousel-item {
+  transition: 0.5s;
+  height: 400px; }
 
-.slick-next {
-  right: -40px;
-  top: 50%;
-  transform: translateY(-150%); }
+.carousel-item img {
+  margin: auto;
+  height: 100%; }
 
-.slick-prev {
-  left: -50px;
-  top: 50%;
-  transform: translateY(-150%); }
+.carousel-control-prev-icon {
+  background-image: url("../img/img-chevron-left.png"); }
+
+.carousel-control-next-icon {
+  background-image: url("../img/img-chevron-right.png"); }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 1.5em; }
+
+.carousel-control-prev, .carousel-control-next {
+  opacity: 0.9; }
 
 .catalog {
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  width: 100%; }
   .catalog__tabs {
     margin-top: 70px;
     margin-bottom: 60px;
@@ -335,11 +366,11 @@ body {
     overflow: hidden; }
     .catalog .catalog-item .catalog-item__wrapper {
       width: calc(200% + 40px);
-      display: flex; }
+      display: flex;
+      justify-content: space-between; }
       .catalog .catalog-item .catalog-item__wrapper .catalog-item__content {
         width: 50%;
         min-height: 340px;
-        margin-right: 0px;
         transform: translateX(-100%); }
         .catalog .catalog-item .catalog-item__wrapper .catalog-item__content_active {
           transform: translateX(0%);
@@ -420,3 +451,21 @@ body {
   font-weight: 500; }
   .link-red:hover {
     color: #c70101; }
+
+.feedback .comment {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px; }
+  .feedback .comment .comment__content {
+    margin-left: 50px; }
+    .feedback .comment .comment__content .customer-name {
+      font-size: 18px;
+      font-weight: 700; }
+    .feedback .comment .comment__content .customer-achievements {
+      color: #646464;
+      font-size: 14px;
+      font-weight: 300; }
+    .feedback .comment .comment__content .customer-comment {
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 500; }

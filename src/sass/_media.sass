@@ -22,17 +22,9 @@
             align-items: center
             margin-top: 40px
 
+        .carousel-item
+            height: 400px
 
-    .slider
-        .slick-next img
-            display: none
-        
-        .slick-prev img
-            display: none
-        
-        .slick-dots li button:before
-            font-size: 25px
-        
     
 
     .advantages
@@ -92,6 +84,24 @@
                     .promo__item-description
                     font-size: 14px
 
+    .slider
+        .carousel-item
+            width: 100%
+            height: auto
+        .carousel-item img
+            width: 100%
+        .carousel-control-prev, .carousel-control-next
+            display: none
+
+    .catalog
+        .catalog__tabs
+            flex-direction: column
+            align-items: center
+            .tab
+                margin-top: 10px
+
+
+
 
     .advantages
         .advantages__wrapper
@@ -102,6 +112,13 @@
     .section_header
         font-size: 25px
 
+
+
+@media ( max-width: 600px  )
+    .feedback
+        .comment
+            flex-direction: column
+            align-items: center
 
 @media (max-width: 400px)
 
@@ -131,3 +148,18 @@
                 text-align: center
             .consultation__description
                 font-size: 16px
+
+    .feedback
+        .comment
+            .comment__content
+                margin-left: 0px
+
+    .feedback
+        .container
+            .comment
+                display: flex
+                justify-content: space-between
+                margin-top: 80px
+                .comment__content
+                    margin-left: 20px
+

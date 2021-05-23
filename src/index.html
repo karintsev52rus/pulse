@@ -7,6 +7,7 @@
     <title>Pulse</title>
     <!-- <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon"> -->
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
@@ -118,13 +119,28 @@
         </div>
     </section>
     <section class="slider">
-        <div class="container">
-            <div class="slider__inner">
-                <div><img class="slider-image" src="img/img-carousel-1.png" alt=""></div>
-                <div><img class="slider-image" src="img/img-carousel-2.png" alt=""></div>
-                <div><img class="slider-image" src="img/img-carousel-3.png" alt=""></div>
-
-            </div>
+        <div class="boot_slider">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/img-carousel-1.png" class="d-block " alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/img-carousel-2.png" class="d-block " alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/img-carousel-3.png" class="d-block " alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
     </section>
     <section class="catalog">
@@ -598,50 +614,73 @@
     </section>
     <section class="feedback">
         <div class="container">
-            <h2 class="section_header"></h2>
+            <h2 class="section_header">отзывы клиентов</h2>
             <div class="comment">
                 <div class="customer-avatar">
-                    <img src="" alt="">
+                    <img src="img/feedback/customer_1.png" alt="">
                 </div>
-                <span class="customer-name">
-
-                </span>
-                <span class="customer-achievements">
-
-                </span>
-                <p class="customer-comment">
-
-                </p>
+                <div class="comment__content">
+                    <span class="customer-name">
+                        Ирина Иванченко 
+                    </span>
+                    <br>
+                    <span class="customer-achievements">
+                        2 полумарафона
+                    </span>
+                    <br>
+                    <p class="customer-comment">
+                        Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности.
+                        Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.
+                        <br><br>
+                        Новые цели - новый гаджет!
+                        <br>
+                        Спасибо, RunSmart! 
+                    </p>
+                </div>
             </div>
             <div class="comment">
                 <div class="customer-avatar">
-                    <img src="" alt="">
+                    <img src="img/feedback/customer_2.png" alt="">
                 </div>
-                <span class="customer-name">
-
-                </span>
-                <span class="customer-achievements">
-
-                </span>
-                <p class="customer-comment">
-                    
-                </p>
+                <div class="comment__content">
+                    <span class="customer-name">
+                        Иван Сёмочкин
+                    </span>
+                    <br>
+                    <span class="customer-achievements">
+                        1 полумарафон
+                    </span>
+                    <p class="customer-comment">
+                        Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. 
+                        Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.
+                        <br>
+                        С ними подготовился к своему первому полумарафону! Спасибо!!!
+    
+                    </p>
+                </div>
+                
 
             </div>
             <div class="comment">
                 <div class="customer-avatar">
-                    <img src="" alt="">
+                    <img src="img/feedback/customer_3.png" alt="">
                 </div>
-                <span class="customer-name">
-
-                </span>
-                <span class="customer-achievements">
-
-                </span>
-                <p class="customer-comment">
-                    
-                </p>
-
+                <div class="comment__content">
+                    <span class="customer-name">
+                        Юлия Дашкина
+                    </span>
+                    <br>
+                    <span class="customer-achievements">
+                        2 полумарафона
+                    </span>
+                    <p class="customer-comment">
+                        Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать.
+                        Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться!
+                        <br>
+                        Спасибо!!!
+                    </p>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -652,9 +691,11 @@
             </div>
         </div>
     </section>
+    <script src="js/listen.js" ></script>
     <script  src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script  src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script  src="js/slick.min.js"></script>
+    <script  src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

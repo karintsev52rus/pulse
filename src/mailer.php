@@ -19,8 +19,8 @@ $mail->CharSet = 'utf-8';
 // $mail->SMTPDebug = 3;                               // Enable verbose debug output
 try{
     $mail->isHTML(TRUE);
-    $mail->setFrom('karintsevp@gmail.com', 'Pulse');   // От кого письмо 
-    $mail->addAddress('karintsevpv@yandex.ru');     // Add a recipient
+    $mail->setFrom('', 'Pulse');   // От кого письмо 
+    $mail->addAddress('');     // Add a recipient
     $mail->Subject = 'Данные';
     $mail->Body    = '
 		Пользователь оставил данные <br> 

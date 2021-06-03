@@ -4,9 +4,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
-require 'C:\OpenServer\domains\pulse\PHPMailer\PHPMailer\src\Exception.php';
-require 'C:\OpenServer\domains\pulse\PHPMailer\PHPMailer\src\PHPMailer.php';
-require 'C:\OpenServer\domains\pulse\PHPMailer\PHPMailer\src\SMTP.php';
+require __DIR__ . '\PHPMailer\PHPMailer\src\Exception.php';
+require __DIR__ . '\PHPMailer\PHPMailer\src\PHPMailer.php';
+require __DIR__ . '\PHPMailer\PHPMailer\src\SMTP.php';
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
